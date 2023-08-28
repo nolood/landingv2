@@ -1,0 +1,15 @@
+[Unit]
+Description=AMS Landing page
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=10
+WorkingDirectory=${WORK_DIRECTORY}
+ExecStartPre=${YARN_BIN}
+ExecStartPre=${YARN_BIN} build
+ExecStart=${YARN_BIN} start
+
+[Install]
+WantedBy=multi-user.target

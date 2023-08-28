@@ -1,0 +1,5 @@
+[Path]
+PathModified=${WORK_DIRECTORY}
+
+[Install]
+WantedBy=multi-user.target

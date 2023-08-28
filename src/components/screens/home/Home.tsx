@@ -1,5 +1,13 @@
+import WhyMe from '@/components/blocks/whyme/WhyMe'
+import Header from '@/components/common/Header/Header'
+
 const Home = () => {
-	return <div>Home</div>
+	return (
+		<>
+			<Header />
+			<WhyMe />
+		</>
+	)
 }
 
 export default Home
